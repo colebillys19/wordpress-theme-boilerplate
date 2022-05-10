@@ -1,0 +1,349 @@
+/*
+Theme Name: Theme Boilerplate
+Text Domain: Theme Boilerplate
+Version: 1.0
+Description: Minimal theme intended for customization.
+Tags: theme, boilerplate
+Author: Billy Cole
+*/
+
+/*
+  This file contains the main styles for the theme. Wordpress uses the
+  information above to display important theme details.
+*/
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article {
+  background-color: #fafaff;
+  color: #333333;
+  flex-grow: 1;
+  font-size: 14px;
+  order: 2;
+  padding: 36px 48px 64px;
+  width: 75%;
+}
+
+article blockquote {
+  border-left: 3px solid #333333;
+  margin: 24px 0;
+  padding: 0 24px;
+}
+
+article h2,
+article h3,
+article h4 {
+  margin-bottom: 24px;
+}
+
+article h3,
+article h4 {
+  margin-top: 24px;
+}
+
+article li:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+
+article ul {
+  padding: 0 24px 24px;
+}
+
+aside {
+  background-color: lavender;
+  color: #333333;
+  min-width: 300px;
+  order: 1;
+  padding: 36px 48px 64px;
+  width: 25%;
+}
+
+aside a {
+  color: #333333;
+  display: block;
+}
+
+aside a:hover,
+aside a:focus {
+  color: blue;
+}
+
+aside h2 {
+  margin-bottom: 24px;
+}
+
+aside li {
+  margin-bottom: 24px;
+}
+
+aside span {
+  color: grey;
+  font-size: 12px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 400px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 12px;
+}
+
+footer {
+  background-color: #333333;
+  color: #fafaff;
+  font-size: 14px;
+  padding: 36px 48px;
+}
+
+footer p {
+  padding: 0;
+}
+
+h1 {
+  color: #fafaff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+header {
+  background-color: #333333;
+  color: lavender;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 48px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  list-style: none;
+}
+
+nav ul li a {
+  color: lavender;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #bfbfff;
+}
+
+nav ul li:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+p {
+  padding-bottom: 12px;
+}
+
+pre {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* classes */
+
+.commentsContent {
+  background-color: #f0f0f0;
+  padding: 24px 36px;
+}
+
+.commentsContent a {
+  color: #333333;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.commentsContent h3 {
+  border-top: 1px solid grey;
+  padding-top: 24px;
+}
+
+.commentsContent h4 {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.commentsContent img {
+  margin-bottom: 12px;
+}
+
+.commentsContent li {
+  padding-bottom: 24px;
+}
+
+.commentsContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.commentsContent .children {
+  border-left: 1px solid grey;
+  margin-top: 24px;
+  padding: 0 36px;
+}
+
+.commentsContent .comment-author {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.commentsContent .comment-author cite {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.commentsContent .comment-form-comment {
+  padding-bottom: 24px;
+}
+
+.commentsContent .comment-form-comment label {
+  display: block;
+}
+
+.commentsContent .comment-form-comment label span {
+  display: none;
+}
+
+.commentsContent .comment-meta {
+  display: none;
+}
+
+.commentsContent .logged-in-as {
+  display: none;
+}
+
+.commentsContent .reply a {
+  color: blue;
+  pointer-events: all;
+}
+
+.commentsContent .reply a:hover,
+.commentsContent .reply a:focus {
+  color: #333333;
+}
+
+.postContent {
+  padding-bottom: 48px;
+}
+
+.postContent h2 {
+  margin: 0;
+}
+
+.postContent p:last-of-type {
+  padding: 0;
+}
+
+.postContent .dateTime {
+  color: grey;
+  margin-bottom: 24px;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+}
+
+.postList h3 {
+  margin: 0;
+}
+
+.postList li {
+  border-left: 3px solid grey;
+  padding: 24px;
+}
+
+.postList li:not(:last-of-type) {
+  margin-bottom: 36px;
+}
+
+.postList .dateTime {
+  color: grey;
+  font-size: 12px;
+}
+
+/* responsive breakpoints */
+
+@media screen and (max-width: 1024px) {
+  article {
+    order: 1;
+    width: 100%;
+  }
+
+  aside {
+    order: 2;
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin: 8px 0 10px;
+  }
+}
